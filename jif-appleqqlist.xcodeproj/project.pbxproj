@@ -12,6 +12,9 @@
 		EE077CEF1C22C01300F0FB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE077CED1C22C01300F0FB77 /* Main.storyboard */; };
 		EE077CF11C22C01300F0FB77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE077CF01C22C01300F0FB77 /* Assets.xcassets */; };
 		EE077CF41C22C01300F0FB77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE077CF21C22C01300F0FB77 /* LaunchScreen.storyboard */; };
+		EEC047531C22DC8700A51184 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEC047521C22DC8700A51184 /* friends.plist */; };
+		EEC047601C22DE6400A51184 /* JKGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC0475F1C22DE6400A51184 /* JKGroupModel.swift */; };
+		EEC047621C22DE7D00A51184 /* JKFriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC047611C22DE7D00A51184 /* JKFriendsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EE077CF01C22C01300F0FB77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE077CF31C22C01300F0FB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE077CF51C22C01300F0FB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC047521C22DC8700A51184 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		EEC0475F1C22DE6400A51184 /* JKGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKGroupModel.swift; sourceTree = "<group>"; };
+		EEC047611C22DE7D00A51184 /* JKFriendsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKFriendsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,10 @@
 		EE077CE81C22C01300F0FB77 /* jif-appleqqlist */ = {
 			isa = PBXGroup;
 			children = (
+				EEC047561C22DD1000A51184 /* Model */,
+				EEC047551C22DD0400A51184 /* View */,
+				EEC047541C22DCF400A51184 /* Controller */,
+				EEC047511C22DC7200A51184 /* Supporting Files */,
 				EE077CE91C22C01300F0FB77 /* AppDelegate.swift */,
 				EE077CEB1C22C01300F0FB77 /* ViewController.swift */,
 				EE077CED1C22C01300F0FB77 /* Main.storyboard */,
@@ -62,6 +72,37 @@
 				EE077CF51C22C01300F0FB77 /* Info.plist */,
 			);
 			path = "jif-appleqqlist";
+			sourceTree = "<group>";
+		};
+		EEC047511C22DC7200A51184 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEC047521C22DC8700A51184 /* friends.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEC047541C22DCF400A51184 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EEC047551C22DD0400A51184 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEC047561C22DD1000A51184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEC0475F1C22DE6400A51184 /* JKGroupModel.swift */,
+				EEC047611C22DE7D00A51184 /* JKFriendsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +165,7 @@
 			files = (
 				EE077CF41C22C01300F0FB77 /* LaunchScreen.storyboard in Resources */,
 				EE077CF11C22C01300F0FB77 /* Assets.xcassets in Resources */,
+				EEC047531C22DC8700A51184 /* friends.plist in Resources */,
 				EE077CEF1C22C01300F0FB77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC047621C22DE7D00A51184 /* JKFriendsModel.swift in Sources */,
+				EEC047601C22DE6400A51184 /* JKGroupModel.swift in Sources */,
 				EE077CEC1C22C01300F0FB77 /* ViewController.swift in Sources */,
 				EE077CEA1C22C01300F0FB77 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +330,7 @@
 				EE077CFA1C22C01300F0FB77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
